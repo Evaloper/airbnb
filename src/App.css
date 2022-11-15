@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
-  font-family: 'Red Rose', cursive;
+  background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+  font-family: "Red Rose", cursive;
   width: max-content;
 }
 
@@ -10,6 +10,11 @@ body {
 
 .logo_img {
   margin-top: 51.14px;
+}
+
+.logo_img > img {
+  width: 233px;
+  height: 36.67px;
 }
 
 .nav {
@@ -30,20 +35,22 @@ body {
 .nav_link > a {
   text-decoration: none;
   margin-right: 48px;
+  font-family: "Red Rose";
   font-size: 20px;
   font-weight: 400px;
   color: #434343;
 }
 
 #nav_btn {
-  background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
   border-radius: 10px;
   padding: 15px 26px 13px 27px;
 }
 
 #nav_btn {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
+  font-family: "Red Rose";
   font-size: 16px;
   font-weight: 400px;
 }
@@ -61,7 +68,7 @@ body {
   justify-content: space-between;
   margin-top: 138px;
   margin-left: 100px;
-  margin-right: 100px;
+  margin-right: 119px;
 }
 
 .left_div {
@@ -69,49 +76,93 @@ body {
 }
 
 #heading {
-  font-weight: 400;
-  font-size: 56px;
+  font-family: "Red Rose";
   color: #434343;
   height: 148px;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 78px;
+  letter-spacing: -0.02em;
 }
-
-
 
 #paragraph {
   width: 636px;
+  font-family: "Red Rose";
   font-size: 24px;
   font-weight: 400;
   height: 102px;
   color: #434343;
+  
 }
 
 .color_span {
-  color: #A02279;
+  color: #a02279;
+  font-family: "Red Rose";
   font-weight: 700;
+}
+
+.input_field {
+  margin-top: 48.08px;
 }
 
 #search_field {
   height: 54px;
   width: 390px;
-  border: 1px solid #A3A3A3;
+  border: 1px solid #a3a3a3;
   border-radius: 8px 0px 0px 8px;
-
+  box-sizing: border-box;
+  padding-left: 15px;
+  font-family: "Red Rose";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #b8b8b8;
+  line-height: 18.2px;
 }
 
 #search_btn {
   height: 54px;
   width: 230px;
-  background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.46%);
-  border-radius: 0px 8px 8px 0px;;
-
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.46%);
+  border-radius: 0px 8px 8px 0px;
+  box-sizing: border-box;
+  border: none;
+  color: #ffffff;
+  font-family: "Red Rose";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 
 .first_sect_btm {
   display: flex;
   justify-content: space-around;
-  background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
   margin-top: 96.46px;
+  height: 70px;
+}
 
+.first_sect_btm > img {
+  margin: auto;
+}
+
+#first_sect_btm1 {
+  width: 222px;
+  height: 50px;
+}
+
+#first_sect_btm2 {
+  width: 214.14px;
+  height: 37.56px;
+}
+
+#first_sect_btm3{
+  width: 198.32px;
+  height: 40.79px;
 }
 /* First Section Ends*/
 
@@ -120,34 +171,34 @@ body {
   margin: 0 100px;
 }
 
-
 .second_sect > p {
   margin-top: 39px;
   margin-bottom: 59px;
   text-align: center;
+  font-family: "Red Rose";
   font-size: 48px;
   font-weight: 700;
   line-height: 60px;
   letter-spacing: 0em;
 }
- #grid > a {
-  margin-bottom: 24px;
- }
 #grp1 {
   grid-area: a;
+  margin-bottom: 24px;
 }
 
 #grp2 {
   grid-area: b;
+  margin-bottom: 24px;
 }
-
 
 #grp3 {
   grid-area: c;
+  margin-bottom: 24px;
 }
 
 #grp4 {
   grid-area: d;
+  margin-bottom: 24px;
 }
 
 #grp5 {
@@ -164,14 +215,16 @@ body {
 
 #grp8 {
   grid-area: h;
+  
 }
 
 #grid {
   display: grid;
-  grid-template-areas: 
-  "a b c d"
-  "e f g h";
+  grid-template-areas:
+    "a b c d"
+    "e f g h";
   grid-gap: 10px;
+  margin-bottom: 53px;
 }
 
 /*Second Section Ends */
@@ -179,41 +232,40 @@ body {
 /* Third Section Starts */
 
 .third_sect {
-    display: flex;
-    justify-content: space-between;
-    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
 }
 
 #third_sect_header {
   width: 346px;
   font-size: 48px;
+  font-family: "Red Rose";
   font-weight: 700;
   line-height: 59.95px;
   height: 60px;
   margin-top: 186px;
-  color: #FFFFFF;
-  
+  color: #ffffff;
 }
 
 #third_sect_para {
   width: 415px;
+  font-family: "Red Rose";
   font-size: 18px;
   font-weight: 400;
   line-height: 35px;
   letter-spacing: 0em;
   text-align: left;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 57.55px;
-
 }
 
 .third_sect_div > a {
   text-decoration: none;
-  color: #A02279;
-  background-color: #FFFFFF;
+  color: #a02279;
+  background-color: #ffffff;
   padding: 14px 33px;
   border-radius: 8px;
-  
 }
 
 .third_sect_div {
@@ -222,7 +274,8 @@ body {
 
 .third_sect_img {
   margin-top: 100px;
-  margin-right: 99px;
+  margin-right: 119px;
+  margin-bottom: 112.71px;
 }
 
 /* Third Section Ends */
@@ -230,8 +283,8 @@ body {
 /*Footer Starts */
 
 .footer {
-  background-color: #1D1D1E;
-  color: #FFFFFF;
+  background-color: #1d1d1e;
+  color: #ffffff;
   display: flex;
   height: 322px;
 }
@@ -241,7 +294,6 @@ body {
   height: 40px;
   width: 233px;
   margin-top: 62.88px;
-
 }
 
 .right_footer_div {
@@ -256,31 +308,40 @@ body {
 }
 
 .ft_hd {
-font-size: 18px;
-font-weight: 700;
-line-height: 23px;
-letter-spacing: 0em;
+  font-family: "Red Rose";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
 }
-
 
 .footer_div > a {
   text-decoration: none;
+  font-family: "Red Rose";
   font-size: 14px;
   font-weight: 400;
   /* line-height: 13px;
   text-align: left; */
-  color: #F1F3F9;
+  color: #f1f3f9;
 }
 
-.div1 {
+.div1, .div2, .div3 {
+  font-family: "Red Rose";
   font-size: 14px;
   font-weight: 400;
-  line-height: 16px;
   align-items: center;
 }
 
-.div2 {
-  line-height: 13px;
+.div1 > p {
+  line-height: 16px;
+}
+
+.last_div > p  {
+  line-height:  17px;
+  font-family: "Red Rose";
+  font-size: 14px;
+  font-weight: 400;
+  align-items: center;
 }
 
 #footer_icons {
@@ -288,8 +349,13 @@ letter-spacing: 0em;
   margin-bottom: 55px;
 }
 
-#footer_icons > a{
+#footer_icons > a {
   margin-right: 32px;
+}
+
+#footer_img > img {
+  width: 233px;
+  height: 40px;
 }
 
 #copyright > img {
@@ -297,12 +363,13 @@ letter-spacing: 0em;
 }
 
 #copyright > p {
+  font-family: "Red Rose";
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 0em;
   text-align: left;
-  color: #F7F7F7;
+  color: #f7f7f7;
   position: relative;
   left: 10%;
   top: 82.92%;

@@ -19,7 +19,7 @@ function FirstSection() {
             <Link to="/">Community</Link>
           </div>
           <div id="wallet_btn">
-            <Link to="/" type="button" id="nav_btn">
+            <Link to="/Connectwallet" type="button" id="nav_btn">
               Connect wallet
             </Link>
           </div>
@@ -37,7 +37,7 @@ function FirstSection() {
             metaverse, get a chance to turn your imagination to reality at your
             comfort zone
           </p>
-          <div>
+          <div className="input_field">
             <input
               type="text"
               placeholder="Search for location"
@@ -51,9 +51,9 @@ function FirstSection() {
         </div>
       </div>
       <div className="first_sect_btm">
-        <img src="/mbtoken.png" />
-        <img src="/opensea.png" />
-        <img src="metamask.png" />
+        <img id="first_sect_btm1" src="/mbtoken.png" />
+        <img id="first_sect_btm2" src="metamask.png" />
+        <img id="first_sect_btm3" src="/opensea.png" />
       </div>
       <div className="second_sect">
         <p>Inspiration for your next adventure</p>
@@ -93,7 +93,7 @@ function FirstSection() {
             access to loads of our exclusive services.
           </p>
           <Link to="/" type="button">
-            Learn More
+            Learn more
           </Link>
         </div>
         <div className="third_sect_img">
@@ -150,7 +150,7 @@ function FirstSection() {
             <Link to="/" className="div2">
               <p>Beach</p>
             </Link>
-            <Link to="/" className="div2">
+            <Link to="/" className="last_div">
               <p>Learn more</p>
             </Link>
           </div>
@@ -165,7 +165,7 @@ function FirstSection() {
             <Link to="/" className="div3">
               <p>Career</p>
             </Link>
-            <Link to="/" className="div3">
+            <Link to="/" className="last_div">
               <p>Contact us</p>
             </Link>
           </div>

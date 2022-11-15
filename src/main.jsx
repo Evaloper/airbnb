@@ -1,7 +1,8 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import Place from './Place'
-import Page from "./App"
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import Place from './Place';
+import Page from "./App";
+import Popup from './Connectwallet';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -18,6 +19,11 @@ const router = createBrowserRouter([
     path: "/Place",
     element: <Place />,
   },
+
+  {
+    path: "/Connectwallet",
+    element: <Popup />,
+  }
 ]);
 
 

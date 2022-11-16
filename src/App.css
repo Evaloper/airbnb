@@ -567,6 +567,7 @@ body {
 
   .third_sect {
     display: grid;
+    justify-content: center;
   }
 
   .third_sect, 

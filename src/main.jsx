@@ -8,6 +8,8 @@ import {
   RouterProvider,
   Route,
 } from "react-router-dom";
+import "./index"
+
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,11 @@ const router = createBrowserRouter([
   {
     path: "/Connectwallet",
     element: <Popup />,
+  },
+
+  {
+    path: "/index",
+    element: <display />,
   }
 ]);
 

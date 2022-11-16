@@ -20,7 +20,7 @@ function Popup() {
           <img src="/image66.png" id="img1"/>
           <img src="/Chevron.png"  id="arrow1"/>
           <Link to={"/"} className='input_btn'>
-            <input type="button" value="WalletConnect" id="btn2" />
+            <input type="button" value="WalletConnec" id="btn2" />
           </Link>
           <img src="/image69.png" id="img2"/>
           <img src="/Chevron.png"  id="arrow2"/>

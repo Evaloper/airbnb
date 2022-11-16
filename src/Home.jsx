@@ -3,6 +3,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Outlet, Link } from "react-router-dom";
 import "./App.css";
+import "./Connect.css";
+import "./index"
+import display from "./index";
+
 
 function FirstSection() {
   return (
@@ -19,7 +23,7 @@ function FirstSection() {
             <Link to="/">Community</Link>
           </div>
           <div id="wallet_btn">
-            <Link to="/Connectwallet" type="button" id="nav_btn">
+            <Link to="/" type="button" id="nav_btn" >
               Connect wallet
             </Link>
           </div>
@@ -48,7 +52,7 @@ function FirstSection() {
               <Link to="/">Community</Link>
             </li>
             <li id="down_list">
-              <Link to="/Connectwallet" type="button" id="nav_btn">
+              <Link to="/" type="button" id="nav_btn" onClick="display()">
                 Connect wallet
               </Link>
             </li>
@@ -77,13 +81,13 @@ function FirstSection() {
           </div>
         </div>
         <div className="right_div">
-          <img src="/firstsection.png" alt=""/>
+          <img src="/firstsection.png" alt="" />
         </div>
       </div>
       <div className="first_sect_btm">
-        <img id="first_sect_btm1" src="/mbtoken.png" alt=""/>
-        <img id="first_sect_btm2" src="metamask.png" alt=""/>
-        <img id="first_sect_btm3" src="/opensea.png" alt=""/>
+        <img id="first_sect_btm1" src="/mbtoken.png" alt="" />
+        <img id="first_sect_btm2" src="metamask.png" alt="" />
+        <img id="first_sect_btm3" src="/opensea.png" alt="" />
       </div>
       <div className="second_sect">
         <p>Inspiration for your next adventure</p>
@@ -201,6 +205,28 @@ function FirstSection() {
           </div>
         </div>
       </div>
+
+      <div className="popup_div">
+        <div className="popup">
+          <div className="top_popup">
+            <p>Connect Wallet</p>
+            <img src="/x.png" id="close" onClick="Displaynone()" />
+          </div>
+          <div className="down_popup">
+            <p>Choose your preferred wallet:</p>
+            <Link to={"/"} className="input_btn">
+              <input type="button" value="Metamask" id="btn1" />
+            </Link>
+            <img src="/image66.png" id="img1" />
+            <img src="/Chevron.png" id="arrow1" />
+            <Link to={"/"} className="input_btn">
+              <input type="button" value="WalletConnect" id="btn2" />
+            </Link>
+            <img src="/image69.png" id="img2" />
+            <img src="/Chevron.png" id="arrow2" />
+          </div>
+        </div>
+      </div>
       {/* <div id='copyright' >
         <span><img src='/copyright.png' /></span>
         <p>2022 Metabnb</p>
@@ -209,5 +235,8 @@ function FirstSection() {
   );
 }
 
+
+
 export default FirstSection;
+
 

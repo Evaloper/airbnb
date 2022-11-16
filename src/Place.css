@@ -112,7 +112,7 @@
   grid-gap: 24px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   #gallery_grid {
     display: grid;
     grid-template-areas:

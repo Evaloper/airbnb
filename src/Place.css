@@ -111,3 +111,68 @@
     "m n o p";
   grid-gap: 24px;
 }
+
+@media screen and (max-width: 400px) {
+  #gallery_grid {
+    display: grid;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f"
+      "g"
+      "h"
+      "i"
+      "j"
+      "k"
+      "l"
+      "m"
+      "n"
+      "o"
+      "p";
+    grid-gap: 24px;
+    text-align: center;
+  }
+
+  .grp > img {
+    width: 900px;
+  }
+
+  .header_link > a {
+    text-decoration: none;
+    margin-right: 48px;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #434343;
+  }
+
+  .header_link {
+    display: grid;
+    justify-content: center;
+  }
+
+  #location_div {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  #location {
+    height: 109px;
+    width: 450px;
+    font-size: 40px;
+  }
+
+  #location_icon {
+    width: 70px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    top: 20px;
+  }
+}

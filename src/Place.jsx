@@ -25,6 +25,36 @@ function Place() {
           </div>
         </nav>
       </div>
+      <div className="mobile_view">
+        <div className="logo_img">
+          <img src="/public/Group.png" />
+        </div>
+        <div>
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">
+            &#9776;
+          </label>
+          <ul className="menu">
+            <li id="top_list">
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/Place">Place to stay</Link>
+            </li>
+            <li>
+              <Link to="/">NFTs</Link>
+            </li>
+            <li>
+              <Link to="/">Community</Link>
+            </li>
+            <li id="down_list">
+              <Link to="/Connectwallet" type="button" id="nav_btn">
+                Connect wallet
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div className="header_link">
         <Link>Resturant</Link>
         <Link>Cottage</Link>
@@ -34,59 +64,61 @@ function Place() {
         <Link>Cabins</Link>
         <Link>Off-grid</Link>
         <Link>Farm</Link>
-        <Link Id="inp-location">
-          <input type="button" id="location" value="Location" />
-        </Link>
-        <img src="/setting-5.png" alt="" id="location_icon" />
+        <div id="location_div">
+          <Link Id="inp-location">
+            <input type="button" id="location" value="Location" />
+          </Link>
+          <img src="/setting-5.png" alt="" id="location_icon" />
+        </div>
       </div>
       <div className="gallery">
         <div id="gallery_grid">
-          <a href="/" id="grp1">
+          <a href="/" id="grp1" className="grp">
             <img src="/Group2(1).png" />
           </a>
-          <a href="/" id="grp2">
+          <a href="/" id="grp2" className="grp">
             <img src="/Group2(3).png" />
           </a>
-          <a href="/" id="grp3">
+          <a href="/" id="grp3" className="grp">
             <img src="/Group2(4).png" />
           </a>
-          <a href="/" id="grp4">
+          <a href="/" id="grp4" className="grp">
             <img src="/Group2(5).png" />
           </a>
-          <a href="/" id="grp5">
+          <a href="/" id="grp5" className="grp">
             <img src="/Group2(6).png" />
           </a>
-          <a href="/" id="grp6">
+          <a href="/" id="grp6" className="grp">
             <img src="/Group2(7).png" />
           </a>
-          <a href="/" id="grp7">
+          <a href="/" id="grp7" className="grp">
             <img src="/Group2(8).png" />
           </a>
-          <a href="/" id="grp8">
+          <a href="/" id="grp8" className="grp">
             <img src="/Group2(9).png" />
           </a>
-          <a href="/" id="grp9">
+          <a href="/" id="grp9" className="grp">
             <img src="/Group2(10).png" />
           </a>
-          <a href="/" id="grp10">
+          <a href="/" id="grp10" className="grp">
             <img src="/Group2(11).png" />
           </a>
-          <a href="/" id="grp11">
+          <a href="/" id="grp11" className="grp">
             <img src="/Group2(12).png" />
           </a>
-          <a href="/" id="grp12">
+          <a href="/" id="grp12" className="grp">
             <img src="/Group2(13).png" />
           </a>
-          <a href="/" id="grp13">
+          <a href="/" id="grp13" className="grp">
             <img src="/Group13.png" />
           </a>
-          <a href="/" id="grp14">
+          <a href="/" id="grp14" className="grp">
             <img src="/Group2(15).png" />
           </a>
-          <a href="/" id="grp15">
+          <a href="/" id="grp15" className="grp">
             <img src="/Group2(16).png" />
           </a>
-          <a href="/" id="grp16">
+          <a href="/" id="grp16" className="grp">
             <img src="/Group2(17).png" />
           </a>
         </div>

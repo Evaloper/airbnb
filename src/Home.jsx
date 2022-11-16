@@ -25,6 +25,36 @@ function FirstSection() {
           </div>
         </nav>
       </div>
+      <div className="mobile_view">
+        <div className="logo_img">
+          <img src="/public/Group.png" />
+        </div>
+        <div>
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">
+            &#9776;
+          </label>
+          <ul className="menu">
+            <li id="top_list">
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/Place">Place to stay</Link>
+            </li>
+            <li>
+              <Link to="/">NFTs</Link>
+            </li>
+            <li>
+              <Link to="/">Community</Link>
+            </li>
+            <li id="down_list">
+              <Link to="/Connectwallet" type="button" id="nav_btn">
+                Connect wallet
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div className="first_sect">
         <div className="left_div">
           <p id="heading">
@@ -47,39 +77,39 @@ function FirstSection() {
           </div>
         </div>
         <div className="right_div">
-          <img src="/firstsection.png" />
+          <img src="/firstsection.png" alt=""/>
         </div>
       </div>
       <div className="first_sect_btm">
-        <img id="first_sect_btm1" src="/mbtoken.png" />
-        <img id="first_sect_btm2" src="metamask.png" />
-        <img id="first_sect_btm3" src="/opensea.png" />
+        <img id="first_sect_btm1" src="/mbtoken.png" alt=""/>
+        <img id="first_sect_btm2" src="metamask.png" alt=""/>
+        <img id="first_sect_btm3" src="/opensea.png" alt=""/>
       </div>
       <div className="second_sect">
         <p>Inspiration for your next adventure</p>
         <div id="grid">
-          <a href="/" id="grp1">
+          <a href="/" id="grp1" className="group">
             <img src="/Group1.png" />
           </a>
-          <a href="/" id="grp2">
+          <a href="/" id="grp2" className="group">
             <img src="/Group2.png" />
           </a>
-          <a href="/" id="grp3">
+          <a href="/" id="grp3" className="group">
             <img src="/Group3.png" />
           </a>
-          <a href="/" id="grp4">
+          <a href="/" id="grp4" className="group">
             <img src="/Group4.png" />
           </a>
-          <a href="/" id="grp5">
+          <a href="/" id="grp5" className="group">
             <img src="/Group5.png" />
           </a>
-          <a href="/" id="grp6">
+          <a href="/" id="grp6" className="group">
             <img src="/Group6.png" />
           </a>
-          <a href="/" id="grp7">
+          <a href="/" id="grp7" className="group">
             <img src="/Group7.png" />
           </a>
-          <a href="/" id="grp8">
+          <a href="/" id="grp8" className="group">
             <img src="/Group8.png" />
           </a>
         </div>
@@ -108,13 +138,13 @@ function FirstSection() {
             <img src="logo.png" />
           </div>
           <div id="footer_icons">
-            <a>
+            <a className="footer_icons_img">
               <img src="/facebook.png" />
             </a>
-            <a>
+            <a className="footer_icons_img">
               <img src="/instagram.png" />
             </a>
-            <a>
+            <a className="footer_icons_img">
               <img src="/twitter.png" />
             </a>
           </div>
@@ -180,3 +210,4 @@ function FirstSection() {
 }
 
 export default FirstSection;
+

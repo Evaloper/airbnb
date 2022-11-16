@@ -4,7 +4,8 @@ import ReactDOM from "react-dom";
 import { Outlet, Link } from "react-router-dom";
 import "./Connect.css";
 
-function Popup() {
+function  Popup() {
+
   return (
     <div className="popup_div">
       <div className="popup">
@@ -25,7 +26,7 @@ function Popup() {
           <img src="/image69.png" id="img2"/>
           <img src="/Chevron.png"  id="arrow2"/>
         </div>
-      </div>
+      </div> 
     </div>
   );
 }

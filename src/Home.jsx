@@ -4,11 +4,11 @@ import ReactDOM from "react-dom";
 import { Outlet, Link } from "react-router-dom";
 import "./App.css";
 import "./Connect.css";
-import "./index"
-import display from "./index";
+import App from "./index";
 
 
 function FirstSection() {
+
   return (
     <div className="body">
       <div className="navbar">
@@ -52,7 +52,7 @@ function FirstSection() {
               <Link to="/">Community</Link>
             </li>
             <li id="down_list">
-              <Link to="/" type="button" id="nav_btn" onClick="display()">
+              <Link to="/" type="button" id="nav_btn">
                 Connect wallet
               </Link>
             </li>
@@ -206,7 +206,7 @@ function FirstSection() {
         </div>
       </div>
 
-      <div className="popup_div">
+      {/* <div className="popup_div">
         <div className="popup">
           <div className="top_popup">
             <p>Connect Wallet</p>
@@ -226,7 +226,7 @@ function FirstSection() {
             <img src="/Chevron.png" id="arrow2" />
           </div>
         </div>
-      </div>
+      </div> */}
       {/* <div id='copyright' >
         <span><img src='/copyright.png' /></span>
         <p>2022 Metabnb</p>

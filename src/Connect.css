@@ -1,12 +1,12 @@
 .popup_div {
-  width: 200vw;
+  width: 100vw;
   height: 550vh;
   background: rgba(64, 64, 64, 0.3);
   position: absolute;
   top: 0;
   display: flex;
   justify-content: center;
-  display: none;
+  
 }
 
 .popup {

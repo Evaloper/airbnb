@@ -686,6 +686,26 @@ body {
     width: 100%;
   }
 
+  .logo_img > img {
+    width: 400px;
+    height: 72.67px;
+  }
+
+  .nav {
+    margin-left: 100px;
+    margin-right: 150px;
+  }
+
+  .nav_link > a {
+    margin-right: 80px;
+    font-size: 40px;
+  }
+
+  #nav_btn {
+    font-size: 40px;
+    padding: 25px 35px 23px 35px;
+  }
+
   .left_div {
     width: 50%;
     margin: auto;
@@ -721,7 +741,29 @@ body {
   }
 
   .right_div > img {
-    width: 713px;
+    width: 900px;
   }
 
+  .first_sect_btm {
+    height: 150px;
+  }
+
+  #first_sect_btm1 {
+    width: 300px;
+    height: 80px;
+  }
+
+  #first_sect_btm2 {
+    width: 295.14px;
+    height: 80.56px;
+
+  }
+
+  #first_sect_btm3 {
+    width: 290.32px;
+    height: 70.79px;
+  }
+  .group > img {
+    width: 550px;
+  }
 }

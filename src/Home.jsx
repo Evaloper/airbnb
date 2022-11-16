@@ -4,11 +4,14 @@ import ReactDOM from "react-dom";
 import { Outlet, Link } from "react-router-dom";
 import "./App.css";
 import "./Connect.css";
-import App from "./index";
-
 
 function FirstSection() {
 
+  const [modal, setOpenModal] = useState(false)
+
+  const linkConnect = () => {
+    setOpenModal(!modal) 
+  }
   return (
     <div className="body">
       <div className="navbar">
@@ -23,7 +26,7 @@ function FirstSection() {
             <Link to="/">Community</Link>
           </div>
           <div id="wallet_btn">
-            <Link to="/" type="button" id="nav_btn" >
+            <Link to="/" type="button" id="nav_btn" onClick={linkConnect}>
               Connect wallet
             </Link>
           </div>
@@ -132,7 +135,7 @@ function FirstSection() {
         </div>
         <div className="third_sect_img">
           <a>
-            <img src="/Frame.png" />
+            <img src="/Frame.png" id="frame"/>
           </a>
         </div>
       </div>
@@ -205,12 +208,12 @@ function FirstSection() {
           </div>
         </div>
       </div>
-
-      {/* <div className="popup_div">
+      {modal && (
+        <div className="popup_div" onClick={linkConnect}>
         <div className="popup">
           <div className="top_popup">
             <p>Connect Wallet</p>
-            <img src="/x.png" id="close" onClick="Displaynone()" />
+            <img src="/x.png" id="close" onClick={linkConnect} />
           </div>
           <div className="down_popup">
             <p>Choose your preferred wallet:</p>
@@ -226,11 +229,9 @@ function FirstSection() {
             <img src="/Chevron.png" id="arrow2" />
           </div>
         </div>
-      </div> */}
-      {/* <div id='copyright' >
-        <span><img src='/copyright.png' /></span>
-        <p>2022 Metabnb</p>
-      </div> */}
+      </div>
+      )}
+      
     </div>
   );
 }

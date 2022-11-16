@@ -2,13 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Place from './Place';
 import Page from "./App";
-import Popup from './Connectwallet';
 import {
   createBrowserRouter,
   RouterProvider,
   Route,
 } from "react-router-dom";
-import "./index"
 
 
 const router = createBrowserRouter([
@@ -22,15 +20,6 @@ const router = createBrowserRouter([
     element: <Place />,
   },
 
-  {
-    path: "/Connectwallet",
-    element: <Popup />,
-  },
-
-  {
-    path: "/index",
-    element: <display />,
-  }
 ]);
 
 

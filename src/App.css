@@ -402,7 +402,7 @@ body {
 
   .hamburger {
     /* display: none; */
-    font-size: 60px;
+    font-size: 150px;
     user-select: none;
     text-align: right;
   }
@@ -410,7 +410,7 @@ body {
   .mobile_view {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 80px;
     margin-right: 50px;
     margin-left: 50px;
   }
